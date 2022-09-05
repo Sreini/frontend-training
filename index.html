@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kattenhotel "De Krabpaal"</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Eirini Galati">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <meta name="description" content="This is a website page created for the purposes of the HTML5+CSS3 training at location &quot;Space to Create&quot; in Utrecht.">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <style>
+        td {
+            padding-left: 5px;
+        }
+        th {
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+        table {
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+        body {
+            background-color: cadetblue;
+            color: white;
+        }
+        .cat-image-container {
+            height: 200px;
+            width: 600px;
+            overflow: hidden;
+        }
+        .main-sub-container {
+            background-color: brown;
+        }
+        .funny-cat-video {
+            width: 40%;
+        }
+        .wat-doen-we-text-container {
+            width: 60%;
+        }
+        .wat-doen-we-container {
+            display: flex;
+            padding: 5px;
+        }
+        .form-field {
+            display: flex;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Kattenhotel "De Krabpaal"</h1>
+        </div>
+        <div class="cat-image-container">
+            <img src="assets/images/cat-410261.jpg" alt="foto van een kat." width="620" height="349">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-sub-container">
+            <h2>Wie zijn wij?</h2>
+            <p>
+                Sinds 1978 zorgen we met veel liefde voor katten en zijn we gevestigd net buiten Amsterdam, op onze prachtige
+                lokatie in Abcoude.
+            </p>
+        </div>
+
+        <div class="main-sub-container wat-doen-we-container">
+            <span class="wat-doen-we-text-container">
+                <h2>Wat doen we?</h2>
+                <p>
+                    Het Kattenhotel is een kleinschalig hotel exclusief voor katten.
+                    Een zeer katvriendelijk hotel, met een inrichting die inspeelt op de behoeften van uw kat en een daarbij
+                    behorende professionele verzorging. Er zijn verschillende kamers waar katten zowel apart als ook
+                    in een groep kunnen verblijven. Alle kamers hebben een buitenverblijf zodat uw kat kan genieten van
+                    de frisse buitenlucht en de afleiding van de natuur.
+                </p>
+                <p>Het leukste kattenhotel van Nederland, de beste zorg voor u huisdier!</p>
+                <ul>
+                    <li>U bent voledig ontzorgt, u kunt rustig op vakantie.</li>
+                    <li>De beste voeding voor uw huisdier.</li>
+                    <li>De modernste en leukste speeltjes.</li>
+                    <li>Professioneel en ervaren personeel.</li>
+                </ul>
+                <p>Neem snel contact met ons op! Er zijn beperkt aantal plekken.</p>
+            </span>
+            <span class="funny-cat-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EaeBiptESaI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+        </div>
+
+        <div class="main-sub-container">
+            <h2>Informatie</h2>
+            <details>
+                <summary>Zo kunt u een plekje boeken</summary>
+                <p>
+                    U kunt een email sturen naar contact@krabpaal.nl met informatie over hoeveel katten u wil boeken.
+                    Uw katten moeten ingeent zijn.
+                </p>
+            </details>
+            <details>
+                <summary>Prijslijst</summary>
+                <table>
+                    <tr>
+                        <th>Hoeveelheid Katten</th> 
+                        <th>Prijs</th>
+                    </tr>
+                    <tr>
+                        <td>1 kat</td>
+                        <td>&euro;20</td>
+                    </tr>
+                    <tr>
+                        <td>2 katten</td>
+                        <td>&euro;35</td>
+                    </tr>
+                    <tr>
+                        <td>3 katten</td>
+                        <td>&euro;47</td>
+                    </tr>
+                    <tr>
+                        <td>4+ katten</td>
+                        <td>&euro;12 per kat</td>
+                    </tr>
+                </table>
+            </details>
+        </div>
+
+
+        <p hidden>Dit is de bonusopdracht!</p>
+
+    </main>
+
+    <footer>
+        <hr>    
+        <h3>Contactinformatie</h3>
+        <ul>
+            <li>
+                <b>telefoon:</b> 
+                <a href="tel:0612345678"
+                >0612345678</a>
+            </li>
+            <li>
+                <b>email:</b> 
+                <a href="mailto:contact@krabpaal.nl"
+                >contact@krabpaal.nl</a>
+            </li>
+        </ul>
+        <h3>Contactformulier</h3>
+        <form>
+            <p>Aanhef:</p>
+            <div>
+                <div>
+                    <input name="aanhef" type="radio" id="meneer" value="Meneer">
+                    <label for="meneer">Meneer</label><br/>
+                </div>
+                <div>
+                    <input name="aanhef" type="radio" id="mevrouw" value="Mevrouw">
+                    <label for="mevrouw">Mevrouw</label><br/>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <div style="width: 50%;">
+                    <label name="voornaam">Voornaam:</label>
+                </div>
+                <div style="width: 50%;">
+                    <input name="voornaam" id="voornaam" type="text">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <div style="width: 50%;">
+                    <label name="achternaam">Achternaam:</label>
+                </div>
+                <div style="width: 50%;">
+                    <input name="achternaam" id="achternaam" type="text">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <div style="width: 50%;">
+                    <label name="telefoonnummer">Telefoonnummer:</label>
+                </div>
+                <div style="width: 50%;">
+                    <input name="telefoonnummer" id="telefoonnummer" type="number">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <div style="width: 50%;">
+                    <label name="bericht">Bericht:</label>
+                </div>
+                <div style="width: 50%;">
+                    <textarea name="bericht" id="text"></textarea>
+                </div>
+            </div>
+        </form>
+    </footer>
+    <!-- <script src="" async defer></script> -->
+</body>
+
+</html>
